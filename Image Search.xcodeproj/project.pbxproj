@@ -19,8 +19,6 @@
 		A2177E721AC1CE5300BBCCED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2177E701AC1CE5300BBCCED /* Main.storyboard */; };
 		A2177E751AC1CE5300BBCCED /* APRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2177E741AC1CE5300BBCCED /* APRViewController.m */; };
 		A2177E771AC1CE5300BBCCED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2177E761AC1CE5300BBCCED /* Images.xcassets */; };
-		A2177E7F1AC1CE5300BBCCED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2177E5E1AC1CE5300BBCCED /* Foundation.framework */; };
-		A2177E801AC1CE5300BBCCED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2177E621AC1CE5300BBCCED /* UIKit.framework */; };
 		A261BB3E1AC39FE900653EC2 /* APRRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A261BB3D1AC39FE900653EC2 /* APRRestClient.m */; };
 		A261BB411AC411E100653EC2 /* APRJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A261BB401AC411E100653EC2 /* APRJSONModel.m */; };
 		A261BB451AC59E2600653EC2 /* APRThumbnailImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A261BB441AC59E2600653EC2 /* APRThumbnailImage.m */; };
@@ -41,16 +39,6 @@
 		A2C26A7E1AC2D7F30063938D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C26A6D1AC2D7F30063938D /* UIImageView+WebCache.m */; };
 		A2C26A7F1AC2D7F30063938D /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C26A6F1AC2D7F30063938D /* UIView+WebCacheOperation.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A2177E811AC1CE5300BBCCED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2177E531AC1CE5300BBCCED /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A2177E5A1AC1CE5300BBCCED;
-			remoteInfo = "Image Search";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A204B5C31AC1D27400FB2618 /* APRCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRCollectionViewCell.h; sourceTree = "<group>"; };
@@ -74,7 +62,6 @@
 		A2177E731AC1CE5300BBCCED /* APRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APRViewController.h; sourceTree = "<group>"; };
 		A2177E741AC1CE5300BBCCED /* APRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APRViewController.m; sourceTree = "<group>"; };
 		A2177E761AC1CE5300BBCCED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A2177E7C1AC1CE5300BBCCED /* Image SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A261BB3C1AC39FE900653EC2 /* APRRestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRRestClient.h; sourceTree = "<group>"; };
 		A261BB3D1AC39FE900653EC2 /* APRRestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRRestClient.m; sourceTree = "<group>"; };
 		A261BB3F1AC411E100653EC2 /* APRJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRJSONModel.h; sourceTree = "<group>"; };
@@ -127,15 +114,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2177E791AC1CE5300BBCCED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2177E801AC1CE5300BBCCED /* UIKit.framework in Frameworks */,
-				A2177E7F1AC1CE5300BBCCED /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -154,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				A2177E5B1AC1CE5300BBCCED /* Image Search.app */,
-				A2177E7C1AC1CE5300BBCCED /* Image SearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,24 +259,6 @@
 			productReference = A2177E5B1AC1CE5300BBCCED /* Image Search.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A2177E7B1AC1CE5300BBCCED /* Image SearchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A2177E901AC1CE5300BBCCED /* Build configuration list for PBXNativeTarget "Image SearchTests" */;
-			buildPhases = (
-				A2177E781AC1CE5300BBCCED /* Sources */,
-				A2177E791AC1CE5300BBCCED /* Frameworks */,
-				A2177E7A1AC1CE5300BBCCED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A2177E821AC1CE5300BBCCED /* PBXTargetDependency */,
-			);
-			name = "Image SearchTests";
-			productName = "Image SearchTests";
-			productReference = A2177E7C1AC1CE5300BBCCED /* Image SearchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -317,9 +276,6 @@
 							};
 						};
 					};
-					A2177E7B1AC1CE5300BBCCED = {
-						TestTargetID = A2177E5A1AC1CE5300BBCCED;
-					};
 				};
 			};
 			buildConfigurationList = A2177E561AC1CE5300BBCCED /* Build configuration list for PBXProject "Image Search" */;
@@ -336,7 +292,6 @@
 			projectRoot = "";
 			targets = (
 				A2177E5A1AC1CE5300BBCCED /* Image Search */,
-				A2177E7B1AC1CE5300BBCCED /* Image SearchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,13 +304,6 @@
 				A2177E771AC1CE5300BBCCED /* Images.xcassets in Resources */,
 				A2177E691AC1CE5300BBCCED /* InfoPlist.strings in Resources */,
 				A2177E721AC1CE5300BBCCED /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2177E7A1AC1CE5300BBCCED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,22 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2177E781AC1CE5300BBCCED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A2177E821AC1CE5300BBCCED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A2177E5A1AC1CE5300BBCCED /* Image Search */;
-			targetProxy = A2177E811AC1CE5300BBCCED /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A2177E671AC1CE5300BBCCED /* InfoPlist.strings */ = {
@@ -531,46 +464,6 @@
 			};
 			name = Release;
 		};
-		A2177E911AC1CE5300BBCCED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Image Search.app/Image Search";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Image Search/Image Search-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Image SearchTests/Image SearchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A2177E921AC1CE5300BBCCED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Image Search.app/Image Search";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Image Search/Image Search-Prefix.pch";
-				INFOPLIST_FILE = "Image SearchTests/Image SearchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,15 +481,6 @@
 			buildConfigurations = (
 				A2177E8E1AC1CE5300BBCCED /* Debug */,
 				A2177E8F1AC1CE5300BBCCED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A2177E901AC1CE5300BBCCED /* Build configuration list for PBXNativeTarget "Image SearchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A2177E911AC1CE5300BBCCED /* Debug */,
-				A2177E921AC1CE5300BBCCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
