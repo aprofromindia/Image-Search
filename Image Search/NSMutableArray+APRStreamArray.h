@@ -16,7 +16,6 @@
 * @param object index
 * @return The object at index or NSNULL
 */
-
 - (id)apr_objectAtIndexOrNullExpanded:(NSUInteger)index;
 
 @end

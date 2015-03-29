@@ -15,7 +15,7 @@ extern const int APR_REQUEST_SIZE;
 // Singleton accessor
 + (instancetype) sharedInstance;
 
-/**
+/** Fetch data from Google Image API for the given position.
 * @param keyword Keyword string to search for
 * @param position Start request param position
 * @param successHandler
