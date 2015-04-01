@@ -149,18 +149,16 @@
 		A2177E641AC1CE5300BBCCED /* Image Search */ = {
 			isa = PBXGroup;
 			children = (
+				A2FA21041ACC21EA0005B9A4 /* Controllers */,
+				A2FA21031ACC21C70005B9A4 /* Views */,
+				A261BB421AC411E700653EC2 /* Models */,
 				A261BB3C1AC39FE900653EC2 /* APRRestClient.h */,
 				A261BB3D1AC39FE900653EC2 /* APRRestClient.m */,
 				A210ABA31AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.h */,
 				A210ABA41AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.m */,
-				A261BB421AC411E700653EC2 /* Models */,
 				A2177E6D1AC1CE5300BBCCED /* APRAppDelegate.h */,
 				A2177E6E1AC1CE5300BBCCED /* APRAppDelegate.m */,
 				A2177E701AC1CE5300BBCCED /* Main.storyboard */,
-				A2177E731AC1CE5300BBCCED /* APRViewController.h */,
-				A2177E741AC1CE5300BBCCED /* APRViewController.m */,
-				A204B5C31AC1D27400FB2618 /* APRCollectionViewCell.h */,
-				A204B5C41AC1D27400FB2618 /* APRCollectionViewCell.m */,
 				A2177E761AC1CE5300BBCCED /* Images.xcassets */,
 				A2177E651AC1CE5300BBCCED /* Supporting Files */,
 			);
@@ -237,6 +235,24 @@
 				A2C26A6F1AC2D7F30063938D /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		A2FA21031ACC21C70005B9A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A204B5C31AC1D27400FB2618 /* APRCollectionViewCell.h */,
+				A204B5C41AC1D27400FB2618 /* APRCollectionViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A2FA21041ACC21EA0005B9A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2177E731AC1CE5300BBCCED /* APRViewController.h */,
+				A2177E741AC1CE5300BBCCED /* APRViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
