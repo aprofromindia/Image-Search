@@ -110,6 +110,7 @@
 
 
 /** private method used to fetch groups of images for Google Image Search
+* @param keyword search term entered in the search bar.
 * @param long indexPath.item position of the cell in groups of 8.
 */
 - (void) p_fetchDataForKeyword:(NSString *) keyword position:(unsigned long) position{

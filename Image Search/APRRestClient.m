@@ -11,8 +11,8 @@
 
 const int APR_REQUEST_SIZE = 8;
 
-static NSString *const kBaseURL = @"https://ajax.googleapis.com/ajax/services/search/images";
-static NSString *const kURLQueryFormat = @"?v=1.0&rsz=8&q=%@&start=%ld";
+static NSString *const kBaseURL = @"http://ajax.googleapis.com/ajax/services/search/images";
+static NSString *const kURLQueryFormat = @"?v=1.0&rsz=%d&q=%@&start=%ld";
 static NSString *const kResponseMimeType = @"text/javascript";
 static const int kHttpOk = 200;
 static NSString *const kResponseDataKey = @"responseData";
@@ -37,11 +37,7 @@ static NSString *const kResponseDataKey = @"responseData";
     dispatch_once(&onceToken, ^{
         instance = [[[self class] alloc] init];
         
-        //setting session config with gzip encoding header
-        NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
-        sessionConfig.HTTPAdditionalHeaders = @{@"Accept-encoding" : @"gzip"};
-        
-        instance->_session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
+        instance->_session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
     });
     return instance;
 }
@@ -55,7 +51,7 @@ static NSString *const kResponseDataKey = @"responseData";
     NSParameterAssert(keyword != nil);
     
     //setup URL and request
-    NSURL *url = [NSURL URLWithString:[kBaseURL stringByAppendingFormat:kURLQueryFormat, [keyword stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], position]];
+    NSURL *url = [NSURL URLWithString:[kBaseURL stringByAppendingFormat:kURLQueryFormat, APR_REQUEST_SIZE, [keyword stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], position]];
     
     //make connection
     [[_session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
