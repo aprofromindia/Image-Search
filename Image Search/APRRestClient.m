@@ -17,20 +17,36 @@ static NSString *const kResponseMimeType = @"text/javascript";
 static const int kHttpOk = 200;
 static NSString *const kResponseDataKey = @"responseData";
 
+@interface APRRestClient (){
+    
+    // App URLSession instance.
+    NSURLSession *_session;
+}
+
+@end
 
 @implementation APRRestClient
 
-+ (instancetype) sharedInstance{
 
+//singleton method which initialises a singleton NSURLSession instance with gzip encoding.
++ (instancetype) sharedInstance{
+    
     static APRRestClient *instance = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[[self class] alloc] init];
+        
+        //setting session config with gzip encoding header
+        NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+        sessionConfig.HTTPAdditionalHeaders = @{@"Accept-encoding" : @"gzip"};
+        
+        instance->_session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
     });
-    
     return instance;
 }
+
+
 
 
 - (void)fetchDataForKeyword:(NSString *)keyword position:(unsigned long) position
@@ -40,17 +56,14 @@ static NSString *const kResponseDataKey = @"responseData";
     
     //setup URL and request
     NSURL *url = [NSURL URLWithString:[kBaseURL stringByAppendingFormat:kURLQueryFormat, [keyword stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], position]];
-    NSDictionary *headers = @{@"Accept-Encoding": @"gzip"};
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request setAllHTTPHeaderFields:headers];
     
     //make connection
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue currentQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+    [[_session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
         
         //checking network response
-        if (!connectionError) {
+        if (!error) {
             if ((httpResponse.statusCode == kHttpOk) && [httpResponse.MIMEType isEqualToString:kResponseMimeType]) {
                 
                 NSError *__autoreleasing *error = nil;
@@ -66,7 +79,7 @@ static NSString *const kResponseDataKey = @"responseData";
             //network error clause
             errorHandler();
         }
-    }];
+    }] resume];
 }
 
 @end

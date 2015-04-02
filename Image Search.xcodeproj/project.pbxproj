@@ -152,8 +152,7 @@
 				A2FA21041ACC21EA0005B9A4 /* Controllers */,
 				A2FA21031ACC21C70005B9A4 /* Views */,
 				A261BB421AC411E700653EC2 /* Models */,
-				A261BB3C1AC39FE900653EC2 /* APRRestClient.h */,
-				A261BB3D1AC39FE900653EC2 /* APRRestClient.m */,
+				A2453D051ACD442E00DFD824 /* Networking */,
 				A210ABA31AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.h */,
 				A210ABA41AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.m */,
 				A2177E6D1AC1CE5300BBCCED /* APRAppDelegate.h */,
@@ -174,6 +173,15 @@
 				A2177E6C1AC1CE5300BBCCED /* Image Search-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2453D051ACD442E00DFD824 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A261BB3C1AC39FE900653EC2 /* APRRestClient.h */,
+				A261BB3D1AC39FE900653EC2 /* APRRestClient.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		A261BB3B1AC36F4D00653EC2 /* Externals */ = {
