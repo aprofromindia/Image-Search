@@ -8,7 +8,7 @@
 
 #import "APRViewController.h"
 #import "APRCollectionViewCell.h"
-#import "../SDWebImage/UIImageView+WebCache.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "APRRestClient.h"
 #import "APRThumbnailImage.h"
 #import "APRResponseModel.h"
