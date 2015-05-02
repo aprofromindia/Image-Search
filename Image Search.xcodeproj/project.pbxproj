@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21D928E9F9C5DDDCA457170C /* libPods-Image Search Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F85A6B15C26B837F205229 /* libPods-Image Search Tests.a */; };
 		A204B5C51AC1D27400FB2618 /* APRCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A204B5C41AC1D27400FB2618 /* APRCollectionViewCell.m */; };
 		A210AB9D1AC6E1C200F6DFC6 /* APRResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A210AB9C1AC6E1C200F6DFC6 /* APRResponseModel.m */; };
 		A210ABA51AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A210ABA41AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.m */; };
@@ -37,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F85A6B15C26B837F205229 /* libPods-Image Search Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Image Search Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		199D0148679E487ED8BAC1E6 /* Pods-Image Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image Search.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Image Search/Pods-Image Search.debug.xcconfig"; sourceTree = "<group>"; };
 		1DD8FB76BEFB0758143BCBB6 /* Pods-Image Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-Image Search/Pods-Image Search.release.xcconfig"; sourceTree = "<group>"; };
+		1F77D8A689C7F757F6E3418F /* Pods-Image Search Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image Search Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Image Search Tests/Pods-Image Search Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A204B5C31AC1D27400FB2618 /* APRCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRCollectionViewCell.h; sourceTree = "<group>"; };
 		A204B5C41AC1D27400FB2618 /* APRCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRCollectionViewCell.m; sourceTree = "<group>"; };
 		A210AB9B1AC6E1C200F6DFC6 /* APRResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRResponseModel.h; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		A29EE9401ACED10800CD063A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A29EE9411ACED10800CD063A /* Image_Search_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Image_Search_Tests.m; sourceTree = "<group>"; };
 		CB2BB6089215570A528BED47 /* libPods-Image Search.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Image Search.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D696C738D3040EB1C482AFF5 /* Pods-Image Search Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image Search Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Image Search Tests/Pods-Image Search Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D928E9F9C5DDDCA457170C /* libPods-Image Search Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +127,7 @@
 				A2177E601AC1CE5300BBCCED /* CoreGraphics.framework */,
 				A2177E621AC1CE5300BBCCED /* UIKit.framework */,
 				CB2BB6089215570A528BED47 /* libPods-Image Search.a */,
+				05F85A6B15C26B837F205229 /* libPods-Image Search Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,8 +139,7 @@
 				A2FA21031ACC21C70005B9A4 /* Views */,
 				A261BB421AC411E700653EC2 /* Models */,
 				A2453D051ACD442E00DFD824 /* Networking */,
-				A210ABA31AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.h */,
-				A210ABA41AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.m */,
+				A2AF913B1AD021ED006AF3DB /* Categories */,
 				A2177E6D1AC1CE5300BBCCED /* APRAppDelegate.h */,
 				A2177E6E1AC1CE5300BBCCED /* APRAppDelegate.m */,
 				A2177E701AC1CE5300BBCCED /* Main.storyboard */,
@@ -194,6 +199,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A2AF913B1AD021ED006AF3DB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A210ABA31AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.h */,
+				A210ABA41AC7F30C00F6DFC6 /* NSMutableArray+APRStreamArray.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		A2FA21031ACC21C70005B9A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +231,8 @@
 			children = (
 				199D0148679E487ED8BAC1E6 /* Pods-Image Search.debug.xcconfig */,
 				1DD8FB76BEFB0758143BCBB6 /* Pods-Image Search.release.xcconfig */,
+				D696C738D3040EB1C482AFF5 /* Pods-Image Search Tests.debug.xcconfig */,
+				1F77D8A689C7F757F6E3418F /* Pods-Image Search Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -247,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A29EE9471ACED10800CD063A /* Build configuration list for PBXNativeTarget "Image Search Tests" */;
 			buildPhases = (
+				081CD0B1EAE7F1102B65DB1D /* Check Pods Manifest.lock */,
 				A29EE9391ACED10800CD063A /* Sources */,
 				A29EE93A1ACED10800CD063A /* Frameworks */,
 				A29EE93B1ACED10800CD063A /* Resources */,
+				C287E38342A53BF1094C84AB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,6 +342,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		081CD0B1EAE7F1102B65DB1D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		36DC7CB70B7B4FDD334B42FF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,6 +385,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C287E38342A53BF1094C84AB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Image Search Tests/Pods-Image Search Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -515,6 +563,7 @@
 		};
 		A29EE9451ACED10800CD063A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D696C738D3040EB1C482AFF5 /* Pods-Image Search Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -538,6 +587,7 @@
 		};
 		A29EE9461ACED10800CD063A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F77D8A689C7F757F6E3418F /* Pods-Image Search Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_UNREACHABLE_CODE = YES;

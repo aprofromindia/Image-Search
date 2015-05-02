@@ -11,7 +11,9 @@
 @interface APRJSONModel : NSObject
 
 /** Designated initialiser used to inflate Model objects from JSON responses.
-* @param dict JSON Dictionary with keys and values to create model object.
+ @param dict JSON Dictionary with keys and values to create model object.
+ 
+ @return singleton instance.
 */
 - (instancetype)initWithDictionary:(NSDictionary *) dict;
 

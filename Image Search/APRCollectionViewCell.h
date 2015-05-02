@@ -10,7 +10,7 @@
 
 @interface APRCollectionViewCell : UICollectionViewCell
 
-//ImageView
+/// ImageView
 @property(nonatomic, weak) IBOutlet UIImageView *imageView;
 
 @end

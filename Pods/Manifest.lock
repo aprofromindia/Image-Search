@@ -1,12 +1,18 @@
 PODS:
+  - Expecta (0.2.4)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
+  - Specta (0.5.0)
 
 DEPENDENCIES:
+  - Expecta (~> 0.2.4)
   - SDWebImage (~> 3.7)
+  - Specta (~> 0.5)
 
 SPEC CHECKSUMS:
+  Expecta: cfaf1d3e2e194ca704a25e997093d30a1ce70b61
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  Specta: eb90708ed77569bbda089f8ead10bb99b8e9489e
 
 COCOAPODS: 0.36.3

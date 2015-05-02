@@ -152,7 +152,12 @@
         
         if (strSelf && !(strSelf->_isAlertViewDisplayed)) {
             
-            [[[UIAlertView alloc] initWithTitle:@"Network Error" message:@"Please check your network connection" delegate:strSelf cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Network Error", nil)
+                                        message:NSLocalizedString(@"Please check your network connection", nil)
+                                        delegate:strSelf
+                                        cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                        otherButtonTitles:nil] show];
+            
             strSelf->_isAlertViewDisplayed = YES;
         }
         

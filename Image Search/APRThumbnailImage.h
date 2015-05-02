@@ -12,7 +12,7 @@
 
 @interface APRThumbnailImage : APRJSONModel
 
-// Thumbnail URL image string
+/// Thumbnail URL image string
 @property (nonatomic, copy, setter = setTbUrl:) NSString *thumbnailURL;
 
 @end

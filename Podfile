@@ -6,6 +6,7 @@ target 'Image Search' do
 end
 
 target 'Image Search Tests' do
-
+    pod 'Specta', '~>0.5'
+    pod 'Expecta', '~>0.2.4'
 end
 

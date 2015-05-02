@@ -10,10 +10,10 @@
 
 @interface APRResponseModel : APRJSONModel
 
-// Array holding Cell item number mapped to APRThumbnail objects.
+/// Array holding Cell item number mapped to APRThumbnail objects.
 @property (nonatomic) NSMutableArray *images;
 
-// Number of images that can be displayed
+/// Number of images that can be displayed
 @property(nonatomic, assign) unsigned int imageCount;
 
 @end

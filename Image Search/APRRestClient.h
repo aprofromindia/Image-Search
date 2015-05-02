@@ -12,7 +12,7 @@ extern const int APR_REQUEST_SIZE;
 
 @interface APRRestClient : NSObject
 
-// Singleton accessor
+/// Singleton accessor
 + (instancetype) sharedInstance;
 
 /** Fetch data from Google Image API for the given position.

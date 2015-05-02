@@ -11,7 +11,7 @@
 
 const int APR_REQUEST_SIZE = 8;
 
-static NSString *const kBaseURL = @"http://ajax.googleapis.com/ajax/services/search/images";
+static NSString *const kBaseURL = @"https://ajax.googleapis.com/ajax/services/search/images";
 static NSString *const kURLQueryFormat = @"?v=1.0&rsz=%d&q=%@&start=%ld";
 static NSString *const kResponseMimeType = @"text/javascript";
 static const int kHttpOk = 200;
@@ -28,7 +28,7 @@ static NSString *const kResponseDataKey = @"responseData";
 @implementation APRRestClient
 
 
-//singleton method which initialises a singleton NSURLSession instance with gzip encoding.
+///singleton method which initialises a singleton NSURLSession instance with gzip encoding.
 + (instancetype) sharedInstance{
     
     static APRRestClient *instance = nil;
@@ -71,7 +71,6 @@ static NSString *const kResponseDataKey = @"responseData";
                 }
             }
         }else{
-            
             //network error clause
             errorHandler();
         }
